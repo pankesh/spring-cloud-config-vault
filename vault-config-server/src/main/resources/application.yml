@@ -1,7 +1,5 @@
-
 spring:
-  profiles:
-    active: vault
-  cloud.config.server.vault.kvVersion: 2
+    application:
+        name: config-server
 server:
-  port: 8888
+    port: 8761

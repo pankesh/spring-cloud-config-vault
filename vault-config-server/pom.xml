@@ -29,6 +29,12 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
+			<version>2.1.3.RELEASE</version> <!-- Forcing to 2.1.3 to fix issue https://github.com/spring-cloud/spring-cloud-config/issues/1393 -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
