@@ -6,22 +6,15 @@
 spring:
     profiles:
         active: dev
-        include: vault,git
+        include: vault
     cloud:
         config:
             server:
-                # bootstrap: true
-                git:
-                    uri: https://github.com/pankesh/hashiconf2019-configs
-                    order: 1
                 vault:
-                    host: 192.168.99.100
-                    port: 8200
-                    scheme: http
                     kv-version: 2
-                    order: 2
                 prefix: /config
             fail-fast: true
+            # name of the config server's property source (file.yml) that we want to use
             name: config-server
             profile: dev # profile(s) of the property source
             label: master # toggle to switch to a different version of the configuration as stored in git
