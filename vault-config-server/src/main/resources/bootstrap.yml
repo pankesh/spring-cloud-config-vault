@@ -13,13 +13,13 @@ spring:
                 # bootstrap: true
                 git:
                     uri: https://github.com/pankesh/hashiconf2019-configs
-                    order: 1
+                    order: 2
                 vault:
                     host: 192.168.99.100
                     port: 8200
                     scheme: http
                     kv-version: 2
-                    order: 2
+                    order: 1
                 prefix: /config
             fail-fast: true
             name: config-server
